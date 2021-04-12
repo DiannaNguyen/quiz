@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Road to US Citizenship",
-    "slug": "Road to US Citizenship",
+    "name": "Quiz",
+    "slug": "Quiz",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
