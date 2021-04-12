@@ -19,9 +19,10 @@ const Quiz = (props) => {
 	};
 
 	const nextButton = () => {
-		setUserAnswer();
+		setUserAnswer(null);
 		if (currentIndex < questionsArray.length) {
 			setCurrentIndex(currentIndex + 1);
+			setFeedbackText(null)
 		}
 	};
 
@@ -56,8 +57,8 @@ const Quiz = (props) => {
 							disabled={userAnswer === null ? true : false}
 						/>
 					</View>
-					<View>
 						<Text style={styles.feedbackText}>{feedbackText}</Text>
+					<View>
 						<Button 
 							color='darkblue'
 							title='NEXT'
