@@ -1,0 +1,69 @@
+{
+	"questionsArray": [
+		{
+			"id": "1",
+			"question": "What is the form of government in the United States?",
+			"options": [
+				"Representative Democracy",
+				"Monarchy",
+				"Parliamentary",
+				"Autocracy"
+			],
+			"correctAnswer": "Representative Democracy",
+			"correctResponse": "CORRECT!",
+			"incorrectResponse": "INCORRECT! The United States is a Represntative Democracy. Other answers not listed are: Constitution-based federal republic and Republic"
+		},
+		{
+			"id": "2",
+			"question": "What is the supreme law of the land?",
+			"options": [
+				"Congress",
+				"The Supreme Court",
+				"The Constitution",
+				"The President"
+			],
+			"correctAnswer": "The Constitution",
+			"correctResponse": "CORRECT!",
+			"incorrectResponse": "INCORRECT! The correct answer is the Constitution."
+		},
+		{
+			"id": "3",
+			"question": "What does the US Constitution do?",
+			"options": [
+				"Made the original 13 colonies",
+				"Created the Star-Spangled Banner",
+				"Bought the Louisiana Territory",
+				"Forms the government"
+			],
+			"correctAnswer": "Forms the government",
+			"correctResponse": "CORRECT!",
+			"incorrectResponse": "INCORRECT! The Constitution forms the government. Other answers not listed are: Defines powers and parts of the government, and protects the rights of the people"
+		},
+		{
+			"id": "4",
+			"question": "What does 'We the People' mean?",
+			"options": [
+				"Self-government",
+				"Supreme Court",
+				"Life, Liberty, and the Pursuit of Happiness",
+				"Freedom"
+			],
+			"correctAnswer": "Self-governemnt",
+			"correctResponse": "CORRECT!",
+			"incorrectResponse": "INCORRECT! 'We the People' can mean self-governemnt. Other answers not listed are: Popular sovereignty, Consent of the governed, People should govern themselves"
+		},
+		{
+			"id": "5",
+			"question": "How are changes made to the US Constitution?",
+			"options": [
+				"The Bill of Rights",
+				"Declaration of Independence",
+				"Capitalism",
+				"Amendments"
+			],
+			"correctAnswer": "Amendments",
+			"correctResponse": "CORRECT!",
+			"incorrectResponse": "INCORRECT! Changes to the Constitution are made through Amendments"
+		}
+	]
+}
