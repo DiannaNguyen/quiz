@@ -5,6 +5,7 @@ const QuizButton = (props) => {
 	return (
 		<View>
 			<Button
+				backgroundColor={props.backgroundColor}
 				color={props.color}
 				title={props.title}
 				onPress={props.onPress}

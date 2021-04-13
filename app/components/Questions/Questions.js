@@ -8,15 +8,17 @@ const QuizQuestion = (props) => {
 	const [selectedOption, setSelectedOption] = useState(null);
 	const optionsButtons = props.options.map((option) => {
 		return (
-			<Button
-				color= 'darkblue'
-				key={option}
-				title={option}
-				onPress={() => {
-					setSelectedOption(option);
-					props.setUserAnswer(option);
-				}}
-			/>
+			<View style={styles.btnContainer}>
+				<Button
+					color='darkblue'
+					key={option}
+					title={option}
+					onPress={() => {
+						setSelectedOption(option);
+						props.setUserAnswer(option);
+					}}
+				/>
+			</View>
 		);
 	});
 	return (
@@ -29,14 +31,16 @@ const QuizQuestion = (props) => {
 	);
 };
 
-
 const styles = StyleSheet.create({
+	btnContainer: {
+		margin: 5,
+	},
 	mainContainer: {
 		flex: 1,
 		padding: 20,
 	},
 	questionTitleContainer: {
-		flex: 0.2,
+		flex: 0.3,
 	},
 	questionTitle: {
 		fontSize: 24,
@@ -50,6 +54,7 @@ const styles = StyleSheet.create({
 	},
 	optionsContainerInline: {
 		flex: 0.8,
+		marginHorizontal: 50,
 		justifyContent: 'center',
 		alignContent: 'center',
 	},

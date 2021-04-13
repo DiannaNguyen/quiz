@@ -56,13 +56,10 @@ const Quiz = (props) => {
 							onPress={CheckButtonPressed}
 							disabled={userAnswer === null ? true : false}
 						/>
+						<Button color='darkblue' title='NEXT' onPress={nextButton} />
 					</View>
-						<Text style={styles.feedbackText}>{feedbackText}</Text>
-					<View>
-						<Button 
-							color='darkblue'
-							title='NEXT'
-							onPress={nextButton}/>
+					<View style={styles.feedbackContainer}>
+					<Text style={styles.feedbackText}>{feedbackText}</Text>
 					</View>
 				</View>
 			)}
@@ -76,6 +73,7 @@ const Quiz = (props) => {
 					<View>
 						<Button
 							color='darkblue'
+							fontSize='20'
 							title='RETAKE Quiz'
 							onPress={() => {
 								setCurrentIndex(0);
@@ -109,21 +107,25 @@ const styles = StyleSheet.create({
 	questionContainer: {
 		flex: 0.6,
 	},
-	buttonContainer: {
-		flex: 0.3,
-		justifyContent: 'flex-end',
-		color: '#000000',
-	},
 	questionTitle: {
 		fontSize: 24,
 		fontWeight: 'bold',
 		color: 'darkblue',
 	},
-	feedbackText: {
-		margin: 20,
-		alignItems: 'center',
+	buttonContainer: {
 		justifyContent: 'center',
-		fontSize: 18
+		color: '#000000',
+		flexDirection: 'row',
+	},
+	feedbackContainer:{
+	flex: 0.6,
+	alignItems: 'center',
+	
+	},
+	feedbackText: {
+		margin: 30,
+		justifyContent: 'center',
+		fontSize: 20
 	},
 	quizEndContainer: {
 		flex: 0.5,
